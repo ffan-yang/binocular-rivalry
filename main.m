@@ -33,6 +33,11 @@ for R = start_graph:step:end_graph
     i = i+1;
 end
 
+
 plot(El_duration)
 hold on
 plot(Er_duration)
+rateR = pinv(Er_duration);
+
+scatter(start_graph:step:end_graph,rateR)
+

@@ -33,4 +33,8 @@ for R = start_graph:step:end_graph
     i = i+1;
 end
 
-plot(
+
+plot(El_duration)
+hold on
+plot(Er_duration)
+rateR=1/Er_duration
